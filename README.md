@@ -1,9 +1,7 @@
-# Angular Team App 🏀
-### (Angular, TypeScript, HTML/CSS)
+# NBA Team Explorer 🏀
 
-> A responsive Angular application for exploring NBA team and roster data through reusable components and service-driven state.
-
-**Portfolio focus:** Angular · TypeScript · component architecture · responsive UI · client-side data flows
+An Angular application for browsing NBA teams and rosters. It demonstrates
+component-based UI design, search, navigation, and shared data services.
 
 ## Contents
 
@@ -16,7 +14,8 @@
 
 ## Introduction
 
-This project is a basic Angular application designed to display team data. It features a team page component, a team sidebar component for navigation and searching, and a main application module structured with TypeScript.
+The interface combines a searchable team sidebar with a focused roster view.
+TypeScript models and Angular services keep data access separate from display logic.
 
 ## How to Run
 
@@ -36,24 +35,17 @@ http://localhost:4200
 
 ![Diagram](diagram.png)
 
-• TeamService: An injectable service responsible for fetching team and player data from the backend API.
-
-• TeamSidebarComponent: Handles the navigation sidebar, displaying a list of teams and managing the search filtering logic.
-
-• TeamDetailsComponent: Displays the specific details and roster of the selected team.
+- **TeamService:** fetches team and player data.
+- **TeamSidebarComponent:** handles navigation and search.
+- **TeamDetailsComponent:** presents the selected team's roster.
 
 ## Improvements
 
-To improve the current state of development, the following issues should be addressed:
-
-• State Management: The filteredTeams property in the sidebar wasn't updating on search input changes. This was fixed by binding an onSearch event handler to the input.
-
-• Memory Management: The players property in team-details.component.ts was initially assigned directly from a JSON array, which can lead to memory leaks upon frequent re-renders. A dedicated service now manages this state.
-
-• Robustness: Implement error handling mechanisms using try-catch blocks or RxJS error handling operators to prevent the app from crashing on failed API calls.
+- Keep search results synchronized through the sidebar input handler.
+- Centralize roster state in the data service.
+- Add RxJS error handling for failed API requests.
 
 ## Conclusion
 
-Thanks for reading up until here. I had a ton of fun doing this project and got a lot of useful insights on Angular components, TypeScript, and state management. If you want to see similar projects, go to my github page. Feel free to reach me on [LinkedIn](https://www.linkedin.com/in/isaiapedro/) or my [Webpage](https://isaiapedro.github.io/).
-
-Bye! 👋
+The project is a compact example of Angular components, TypeScript models, and
+service-driven state working together.
