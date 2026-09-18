@@ -1,6 +1,10 @@
 # Angular Team App 🏀
 ### (Angular, TypeScript, HTML/CSS)
 
+> A responsive Angular application for exploring NBA team and roster data through reusable components and service-driven state.
+
+**Portfolio focus:** Angular · TypeScript · component architecture · responsive UI · client-side data flows
+
 ## Contents
 
 - [Introduction](#introduction)
