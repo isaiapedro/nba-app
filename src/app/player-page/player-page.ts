@@ -1,18 +1,13 @@
-import { Component, Input } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { MatCardModule } from '@angular/material/card';
+import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import jsonData from '../data/active_players.json';
 import { Player } from '../player';
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'player-page',
   imports: [
     RouterLink, 
-    RouterOutlet,
-    RouterLinkActive,
-    MatCardModule,
-    NgbCarouselModule
+    RouterLinkActive
   ],
   template: 
   `
@@ -96,11 +91,11 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
         }
 
       a:hover h4{
-        background-color: rgba(0,0,0,0.1)};
+        background-color: rgba(0,0,0,0.1);
       }
 
       .active-link h4{
-        background-color: #14213;
+        background-color: #14213d;
         color: #fff;
       }
     `,

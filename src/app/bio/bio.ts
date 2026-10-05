@@ -1,17 +1,10 @@
-import { Component, Input } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { MatCardModule } from '@angular/material/card';
+import { Component } from '@angular/core';
 import jsonData2 from '../data/teams.json';
 import { Team } from '../team';
 
 @Component({
   selector: 'app-team-sidebar',
-  imports: [
-    RouterLink, 
-    RouterOutlet,
-    RouterLinkActive,
-    MatCardModule
-  ],
+  imports: [],
   template: `
       <ul>
         @for (team of teams; track team.id){

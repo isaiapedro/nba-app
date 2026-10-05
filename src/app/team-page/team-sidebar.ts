@@ -1,18 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { MatCardModule } from '@angular/material/card';
 import jsonData2 from '../data/teams.json';
 import { Team } from '../team';
-import { TeamDetails } from './team-details';
 
 @Component({
   selector: 'app-team-sidebar',
   imports: [
     RouterLink, 
     RouterOutlet,
-    RouterLinkActive,
-    MatCardModule, 
-    TeamDetails
+    RouterLinkActive
   ],
   template: `
     <nav class="menu">
@@ -114,11 +110,11 @@ import { TeamDetails } from './team-details';
         }
 
       a:hover h4{
-        background-color: rgba(0,0,0,0.1)};
+        background-color: rgba(0,0,0,0.1);
       }
 
       .active-link h4{
-        background-color: #14213;
+        background-color: #14213d;
         color: #fff;
       }
     `,

@@ -1,0 +1,44 @@
+id: nba_app
+type: side_project_application
+name: NBA Team Explorer
+version: 0.1.0
+status: active
+owner: isaiapedro
+description: >
+  Angular prototype for browsing NBA teams, rosters, and players from bundled
+  datasets, with an experimental MVP prediction surface.
+tags:
+  - nba
+  - basketball
+  - angular
+  - data-visualization
+depends_on:
+  - registry
+  - workspace/side_projects
+  - knowledge/technology
+exports: []
+stage: prototype
+priority: medium
+repository:
+  kind: nested_repository
+  commit_authority: independent
+  registry_id: nba_app
+  registry_path: registry/repositories.yaml
+data_boundary:
+  classification: public_sports_reference_data
+  runtime_personal_data: none
+  third_party_snapshots: repository_owned
+  credentials: prohibited
+interfaces:
+  agent_instructions: workspace/side_projects/nba-app/AGENTS.md
+  overview: workspace/side_projects/nba-app/README.md
+  system_contract: workspace/side_projects/nba-app/SYSTEM.md
+  behavior_contract: workspace/side_projects/nba-app/BEHAVIOR.md
+  roadmap: workspace/side_projects/nba-app/ROADMAP.md
+  task_register: workspace/side_projects/nba-app/TASKS.md
+  decision_log: workspace/side_projects/nba-app/DECISIONS.md
+  review_record: workspace/side_projects/nba-app/REVIEW.md
+  capability_contract: workspace/side_projects/nba-app/SKILLS.md
+  idea_register: workspace/side_projects/nba-app/IDEAS.md
+  audit_log: workspace/side_projects/nba-app/AUDIT.md
+  traceability_log: workspace/side_projects/nba-app/TRACEABILITY.md

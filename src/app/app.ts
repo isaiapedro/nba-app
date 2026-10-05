@@ -1,15 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
+import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    RouterLink,
-    MatToolbarModule,
-    MatButtonModule,
-    RouterLinkActive
+    RouterLink
     ],
   template: `
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">

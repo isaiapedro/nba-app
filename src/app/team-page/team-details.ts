@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { MatCardModule } from '@angular/material/card';
 
 import jsonData from '../data/active_players.json';
 import jsonData2 from '../data/teams.json';
@@ -11,10 +9,7 @@ import { Team } from '../team';
 @Component({
   selector: 'app-team-details',
   standalone: true,
-  imports: [
-    CommonModule,
-    MatCardModule
-  ],
+  imports: [],
   template: `
     <div class="details-content-wrapper">
       @if (teamData){
